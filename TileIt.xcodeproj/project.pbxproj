@@ -21,7 +21,6 @@
 		2ED90AB61A9ECC780099579A /* LinkDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED90AB51A9ECC780099579A /* LinkDataSource.m */; };
 		2EDE49211A8D921D00D5C25D /* RedditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49201A8D921D00D5C25D /* RedditController.m */; };
 		2EDE49241A8D928800D5C25D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49231A8D928800D5C25D /* TableViewController.m */; };
-		2EDE49271A8D92B700D5C25D /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49261A8D92B700D5C25D /* PostViewController.m */; };
 		2EDE492A1A8D92C700D5C25D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49291A8D92C700D5C25D /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		22FD3174A8AA73CED8CC081C /* Pods-TileIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TileIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TileIt/Pods-TileIt.debug.xcconfig"; sourceTree = "<group>"; };
-		2E041F481A8FE3D0009C8857 /* PostCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCollectionViewCell.h; sourceTree = "<group>"; };
+		2E041F481A8FE3D0009C8857 /* PostCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCollectionViewCell.h; sourceTree = "<group>"; wrapsLines = 1; };
 		2E041F491A8FE3D0009C8857 /* PostCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCollectionViewCell.m; sourceTree = "<group>"; };
 		2E041F4A1A8FE3D0009C8857 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		2E041F4D1A8FE4DB009C8857 /* SubRedditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubRedditTableViewCell.h; sourceTree = "<group>"; };
@@ -60,8 +59,6 @@
 		2EDE49201A8D921D00D5C25D /* RedditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditController.m; sourceTree = "<group>"; };
 		2EDE49221A8D928800D5C25D /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		2EDE49231A8D928800D5C25D /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		2EDE49251A8D92B600D5C25D /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
-		2EDE49261A8D92B700D5C25D /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
 		2EDE49281A8D92C700D5C25D /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		2EDE49291A8D92C700D5C25D /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		AC7F176827042040F0AEA054 /* Pods-TileIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TileIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-TileIt/Pods-TileIt.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,13 +106,11 @@
 		2E041F511A8FE6E7009C8857 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
-				2EDE49251A8D92B600D5C25D /* PostViewController.h */,
-				2EDE49261A8D92B700D5C25D /* PostViewController.m */,
+				2ED90AB41A9ECC780099579A /* LinkDataSource.h */,
+				2ED90AB51A9ECC780099579A /* LinkDataSource.m */,
 				2E041F481A8FE3D0009C8857 /* PostCollectionViewCell.h */,
 				2E041F491A8FE3D0009C8857 /* PostCollectionViewCell.m */,
 				2E041F4A1A8FE3D0009C8857 /* PostCollectionViewCell.xib */,
-				2ED90AB41A9ECC780099579A /* LinkDataSource.h */,
-				2ED90AB51A9ECC780099579A /* LinkDataSource.m */,
 			);
 			name = Posts;
 			sourceTree = "<group>";
@@ -341,7 +336,6 @@
 			files = (
 				2ED90AB61A9ECC780099579A /* LinkDataSource.m in Sources */,
 				2E041F4F1A8FE4DB009C8857 /* SubRedditTableViewCell.m in Sources */,
-				2EDE49271A8D92B700D5C25D /* PostViewController.m in Sources */,
 				2EDE49211A8D921D00D5C25D /* RedditController.m in Sources */,
 				2EC2A3371A7D2D64003D3837 /* TileIt.xcdatamodeld in Sources */,
 				2EC2A3341A7D2D64003D3837 /* AppDelegate.m in Sources */,

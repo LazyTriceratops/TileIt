@@ -24,6 +24,7 @@
     PostCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     RKLink * link = self.links[indexPath.row];
     cell.label.text = link.title;
+    cell.content = link.URL;
     return cell;
 }
 

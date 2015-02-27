@@ -10,6 +10,7 @@
 #import "SubRedditTableViewCell.h"
 #import <RedditKit/RedditKit.h>
 #import "LinkDataSource.h"
+#import "PostCollectionViewCell.h"
 
 #import "RedditController.h"
 
