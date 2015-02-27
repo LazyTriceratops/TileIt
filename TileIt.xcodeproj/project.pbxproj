@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0F3EA9FAFB95000475D8A4 /* libPods-TileIt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F720E1E5E0DEADAD9308B7A0 /* libPods-TileIt.a */; };
+		2E041F4B1A8FE3D0009C8857 /* PostCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E041F491A8FE3D0009C8857 /* PostCollectionViewCell.m */; };
+		2E041F4C1A8FE3D0009C8857 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E041F4A1A8FE3D0009C8857 /* PostCollectionViewCell.xib */; };
+		2E041F4F1A8FE4DB009C8857 /* SubRedditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E041F4E1A8FE4DB009C8857 /* SubRedditTableViewCell.m */; };
+		2EC2A3311A7D2D64003D3837 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2A3301A7D2D64003D3837 /* main.m */; };
+		2EC2A3341A7D2D64003D3837 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2A3331A7D2D64003D3837 /* AppDelegate.m */; };
+		2EC2A3371A7D2D64003D3837 /* TileIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2A3351A7D2D64003D3837 /* TileIt.xcdatamodeld */; };
+		2EC2A33D1A7D2D64003D3837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2A33B1A7D2D64003D3837 /* Main.storyboard */; };
+		2EC2A33F1A7D2D64003D3837 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2A33E1A7D2D64003D3837 /* Images.xcassets */; };
+		2EC2A3421A7D2D64003D3837 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EC2A3401A7D2D64003D3837 /* LaunchScreen.xib */; };
+		2EC2A34E1A7D2D64003D3837 /* TileItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2A34D1A7D2D64003D3837 /* TileItTests.m */; };
+		2ED90AB61A9ECC780099579A /* LinkDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED90AB51A9ECC780099579A /* LinkDataSource.m */; };
+		2EDE49211A8D921D00D5C25D /* RedditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49201A8D921D00D5C25D /* RedditController.m */; };
+		2EDE49241A8D928800D5C25D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49231A8D928800D5C25D /* TableViewController.m */; };
+		2EDE49271A8D92B700D5C25D /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49261A8D92B700D5C25D /* PostViewController.m */; };
+		2EDE492A1A8D92C700D5C25D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49291A8D92C700D5C25D /* SettingsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2EC2A3481A7D2D64003D3837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EC2A3231A7D2D64003D3837 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EC2A32A1A7D2D64003D3837;
+			remoteInfo = TileIt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22FD3174A8AA73CED8CC081C /* Pods-TileIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TileIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TileIt/Pods-TileIt.debug.xcconfig"; sourceTree = "<group>"; };
+		2E041F481A8FE3D0009C8857 /* PostCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCollectionViewCell.h; sourceTree = "<group>"; };
+		2E041F491A8FE3D0009C8857 /* PostCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCollectionViewCell.m; sourceTree = "<group>"; };
+		2E041F4A1A8FE3D0009C8857 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E041F4D1A8FE4DB009C8857 /* SubRedditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubRedditTableViewCell.h; sourceTree = "<group>"; };
+		2E041F4E1A8FE4DB009C8857 /* SubRedditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubRedditTableViewCell.m; sourceTree = "<group>"; };
+		2EC2A32B1A7D2D64003D3837 /* TileIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TileIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EC2A32F1A7D2D64003D3837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC2A3301A7D2D64003D3837 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2EC2A3321A7D2D64003D3837 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2EC2A3331A7D2D64003D3837 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2EC2A3361A7D2D64003D3837 /* TileIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TileIt.xcdatamodel; sourceTree = "<group>"; };
+		2EC2A33C1A7D2D64003D3837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EC2A33E1A7D2D64003D3837 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2EC2A3411A7D2D64003D3837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2EC2A3471A7D2D64003D3837 /* TileItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TileItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EC2A34C1A7D2D64003D3837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC2A34D1A7D2D64003D3837 /* TileItTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TileItTests.m; sourceTree = "<group>"; };
+		2ED90AB41A9ECC780099579A /* LinkDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkDataSource.h; sourceTree = "<group>"; };
+		2ED90AB51A9ECC780099579A /* LinkDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkDataSource.m; sourceTree = "<group>"; };
+		2EDE491F1A8D921D00D5C25D /* RedditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditController.h; sourceTree = "<group>"; };
+		2EDE49201A8D921D00D5C25D /* RedditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditController.m; sourceTree = "<group>"; };
+		2EDE49221A8D928800D5C25D /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		2EDE49231A8D928800D5C25D /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		2EDE49251A8D92B600D5C25D /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		2EDE49261A8D92B700D5C25D /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		2EDE49281A8D92C700D5C25D /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2EDE49291A8D92C700D5C25D /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		AC7F176827042040F0AEA054 /* Pods-TileIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TileIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-TileIt/Pods-TileIt.release.xcconfig"; sourceTree = "<group>"; };
+		F720E1E5E0DEADAD9308B7A0 /* libPods-TileIt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TileIt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EC2A3281A7D2D64003D3837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0F3EA9FAFB95000475D8A4 /* libPods-TileIt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC2A3441A7D2D64003D3837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05E5EE988438483CCF383779 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F720E1E5E0DEADAD9308B7A0 /* libPods-TileIt.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E041F501A8FE5B2009C8857 /* SubReddits */ = {
+			isa = PBXGroup;
+			children = (
+				2EDE49221A8D928800D5C25D /* TableViewController.h */,
+				2EDE49231A8D928800D5C25D /* TableViewController.m */,
+				2E041F4D1A8FE4DB009C8857 /* SubRedditTableViewCell.h */,
+				2E041F4E1A8FE4DB009C8857 /* SubRedditTableViewCell.m */,
+			);
+			name = SubReddits;
+			sourceTree = "<group>";
+		};
+		2E041F511A8FE6E7009C8857 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				2EDE49251A8D92B600D5C25D /* PostViewController.h */,
+				2EDE49261A8D92B700D5C25D /* PostViewController.m */,
+				2E041F481A8FE3D0009C8857 /* PostCollectionViewCell.h */,
+				2E041F491A8FE3D0009C8857 /* PostCollectionViewCell.m */,
+				2E041F4A1A8FE3D0009C8857 /* PostCollectionViewCell.xib */,
+				2ED90AB41A9ECC780099579A /* LinkDataSource.h */,
+				2ED90AB51A9ECC780099579A /* LinkDataSource.m */,
+			);
+			name = Posts;
+			sourceTree = "<group>";
+		};
+		2E041F521A8FE700009C8857 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2EDE49281A8D92C700D5C25D /* SettingsViewController.h */,
+				2EDE49291A8D92C700D5C25D /* SettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		2EC2A3221A7D2D64003D3837 = {
+			isa = PBXGroup;
+			children = (
+				2EC2A32D1A7D2D64003D3837 /* TileIt */,
+				2EC2A34A1A7D2D64003D3837 /* TileItTests */,
+				2EC2A32C1A7D2D64003D3837 /* Products */,
+				4B3F1DC7951CD6FA76695D4A /* Pods */,
+				05E5EE988438483CCF383779 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2EC2A32C1A7D2D64003D3837 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EC2A32B1A7D2D64003D3837 /* TileIt.app */,
+				2EC2A3471A7D2D64003D3837 /* TileItTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EC2A32D1A7D2D64003D3837 /* TileIt */ = {
+			isa = PBXGroup;
+			children = (
+				2EC2A33B1A7D2D64003D3837 /* Main.storyboard */,
+				2EC2A3321A7D2D64003D3837 /* AppDelegate.h */,
+				2EC2A3331A7D2D64003D3837 /* AppDelegate.m */,
+				2EDE491F1A8D921D00D5C25D /* RedditController.h */,
+				2EDE49201A8D921D00D5C25D /* RedditController.m */,
+				2E041F501A8FE5B2009C8857 /* SubReddits */,
+				2E041F511A8FE6E7009C8857 /* Posts */,
+				2E041F521A8FE700009C8857 /* Settings */,
+				2EC2A33E1A7D2D64003D3837 /* Images.xcassets */,
+				2EC2A3401A7D2D64003D3837 /* LaunchScreen.xib */,
+				2EC2A3351A7D2D64003D3837 /* TileIt.xcdatamodeld */,
+				2EC2A32E1A7D2D64003D3837 /* Supporting Files */,
+			);
+			path = TileIt;
+			sourceTree = "<group>";
+		};
+		2EC2A32E1A7D2D64003D3837 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EC2A32F1A7D2D64003D3837 /* Info.plist */,
+				2EC2A3301A7D2D64003D3837 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EC2A34A1A7D2D64003D3837 /* TileItTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EC2A34D1A7D2D64003D3837 /* TileItTests.m */,
+				2EC2A34B1A7D2D64003D3837 /* Supporting Files */,
+			);
+			path = TileItTests;
+			sourceTree = "<group>";
+		};
+		2EC2A34B1A7D2D64003D3837 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EC2A34C1A7D2D64003D3837 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B3F1DC7951CD6FA76695D4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22FD3174A8AA73CED8CC081C /* Pods-TileIt.debug.xcconfig */,
+				AC7F176827042040F0AEA054 /* Pods-TileIt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EC2A32A1A7D2D64003D3837 /* TileIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EC2A3511A7D2D64003D3837 /* Build configuration list for PBXNativeTarget "TileIt" */;
+			buildPhases = (
+				2A3CE96485D03E4948F4D27C /* Check Pods Manifest.lock */,
+				2EC2A3271A7D2D64003D3837 /* Sources */,
+				2EC2A3281A7D2D64003D3837 /* Frameworks */,
+				2EC2A3291A7D2D64003D3837 /* Resources */,
+				8756FC9C0D3C3691CAFE4A20 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TileIt;
+			productName = TileIt;
+			productReference = 2EC2A32B1A7D2D64003D3837 /* TileIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2EC2A3461A7D2D64003D3837 /* TileItTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EC2A3541A7D2D64003D3837 /* Build configuration list for PBXNativeTarget "TileItTests" */;
+			buildPhases = (
+				2EC2A3431A7D2D64003D3837 /* Sources */,
+				2EC2A3441A7D2D64003D3837 /* Frameworks */,
+				2EC2A3451A7D2D64003D3837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EC2A3491A7D2D64003D3837 /* PBXTargetDependency */,
+			);
+			name = TileItTests;
+			productName = TileItTests;
+			productReference = 2EC2A3471A7D2D64003D3837 /* TileItTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EC2A3231A7D2D64003D3837 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Devin Eror";
+				TargetAttributes = {
+					2EC2A32A1A7D2D64003D3837 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					2EC2A3461A7D2D64003D3837 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 2EC2A32A1A7D2D64003D3837;
+					};
+				};
+			};
+			buildConfigurationList = 2EC2A3261A7D2D64003D3837 /* Build configuration list for PBXProject "TileIt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EC2A3221A7D2D64003D3837;
+			productRefGroup = 2EC2A32C1A7D2D64003D3837 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EC2A32A1A7D2D64003D3837 /* TileIt */,
+				2EC2A3461A7D2D64003D3837 /* TileItTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EC2A3291A7D2D64003D3837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E041F4C1A8FE3D0009C8857 /* PostCollectionViewCell.xib in Resources */,
+				2EC2A33D1A7D2D64003D3837 /* Main.storyboard in Resources */,
+				2EC2A3421A7D2D64003D3837 /* LaunchScreen.xib in Resources */,
+				2EC2A33F1A7D2D64003D3837 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC2A3451A7D2D64003D3837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A3CE96485D03E4948F4D27C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8756FC9C0D3C3691CAFE4A20 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TileIt/Pods-TileIt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EC2A3271A7D2D64003D3837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ED90AB61A9ECC780099579A /* LinkDataSource.m in Sources */,
+				2E041F4F1A8FE4DB009C8857 /* SubRedditTableViewCell.m in Sources */,
+				2EDE49271A8D92B700D5C25D /* PostViewController.m in Sources */,
+				2EDE49211A8D921D00D5C25D /* RedditController.m in Sources */,
+				2EC2A3371A7D2D64003D3837 /* TileIt.xcdatamodeld in Sources */,
+				2EC2A3341A7D2D64003D3837 /* AppDelegate.m in Sources */,
+				2EDE49241A8D928800D5C25D /* TableViewController.m in Sources */,
+				2E041F4B1A8FE3D0009C8857 /* PostCollectionViewCell.m in Sources */,
+				2EC2A3311A7D2D64003D3837 /* main.m in Sources */,
+				2EDE492A1A8D92C700D5C25D /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC2A3431A7D2D64003D3837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC2A34E1A7D2D64003D3837 /* TileItTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EC2A3491A7D2D64003D3837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EC2A32A1A7D2D64003D3837 /* TileIt */;
+			targetProxy = 2EC2A3481A7D2D64003D3837 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2EC2A33B1A7D2D64003D3837 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EC2A33C1A7D2D64003D3837 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EC2A3401A7D2D64003D3837 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EC2A3411A7D2D64003D3837 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EC2A34F1A7D2D64003D3837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EC2A3501A7D2D64003D3837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EC2A3521A7D2D64003D3837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22FD3174A8AA73CED8CC081C /* Pods-TileIt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TileIt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2EC2A3531A7D2D64003D3837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC7F176827042040F0AEA054 /* Pods-TileIt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TileIt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2EC2A3551A7D2D64003D3837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TileItTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TileIt.app/TileIt";
+			};
+			name = Debug;
+		};
+		2EC2A3561A7D2D64003D3837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TileItTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TileIt.app/TileIt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EC2A3261A7D2D64003D3837 /* Build configuration list for PBXProject "TileIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC2A34F1A7D2D64003D3837 /* Debug */,
+				2EC2A3501A7D2D64003D3837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EC2A3511A7D2D64003D3837 /* Build configuration list for PBXNativeTarget "TileIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC2A3521A7D2D64003D3837 /* Debug */,
+				2EC2A3531A7D2D64003D3837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EC2A3541A7D2D64003D3837 /* Build configuration list for PBXNativeTarget "TileItTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC2A3551A7D2D64003D3837 /* Debug */,
+				2EC2A3561A7D2D64003D3837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2EC2A3351A7D2D64003D3837 /* TileIt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2EC2A3361A7D2D64003D3837 /* TileIt.xcdatamodel */,
+			);
+			currentVersion = 2EC2A3361A7D2D64003D3837 /* TileIt.xcdatamodel */;
+			path = TileIt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2EC2A3231A7D2D64003D3837 /* Project object */;
+}

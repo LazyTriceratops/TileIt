@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GvQ-RC-F9b">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="scZ-hZ-7pW">
+            <objects>
+                <viewController id="Ksn-S0-4yK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bCE-i1-zA9"/>
+                        <viewControllerLayoutGuide type="bottom" id="FhH-wg-J7H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4ig-4X-Sy8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="38P-9G-wsf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J84-Ub-wac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213" y="-1633"/>
+        </scene>
+        <!--SubReddits-->
+        <scene sceneID="b5C-fz-Zrk">
+            <objects>
+                <tableViewController id="gvI-l1-Bi4" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="199" sectionHeaderHeight="22" sectionFooterHeight="22" id="22h-lF-3Jb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="subRedditCell" rowHeight="199" id="l8u-4L-7Gy" customClass="SubRedditTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l8u-4L-7Gy" id="rYn-Te-moz">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubReddit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIL-WN-KiJ">
+                                            <rect key="frame" x="16" y="8" width="466" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="466" id="HKX-yo-C0a"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="nIL-WN-KiJ" firstAttribute="leading" secondItem="rYn-Te-moz" secondAttribute="leadingMargin" constant="8" id="TL8-Nf-xrN"/>
+                                        <constraint firstItem="nIL-WN-KiJ" firstAttribute="top" secondItem="rYn-Te-moz" secondAttribute="topMargin" id="sb4-tv-HF0"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="subRedditLabel" destination="nIL-WN-KiJ" id="8UE-dy-Xz3"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gvI-l1-Bi4" id="lo0-Vb-mGU"/>
+                            <outlet property="delegate" destination="gvI-l1-Bi4" id="VVB-jA-aWq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="SubReddits" id="SDH-fM-A7P"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xiy-Iu-VIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551" y="-913"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6I7-qI-H2u">
+            <objects>
+                <navigationController id="GvQ-RC-F9b" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LXZ-ot-Cio">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gvI-l1-Bi4" kind="relationship" relationship="rootViewController" id="JdO-iF-bSW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Epk-Ln-jGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1194" y="-979"/>
+        </scene>
+    </scenes>
+</document>

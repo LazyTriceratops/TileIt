@@ -1,0 +1,1 @@
+PODS_TILEIT_MANTLE_OTHER_LDFLAGS = -framework "Foundation"
