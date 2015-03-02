@@ -22,9 +22,15 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PostCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    
+    
+    
+//    cell.frame = CGRectMake(0, 0, 200, 350);
+    
     RKLink * link = self.links[indexPath.row];
     cell.label.text = link.title;
-    cell.content = link.URL;
+//    cell.content.subviews = 
+//    cell.content = link.URL;
     return cell;
 }
 

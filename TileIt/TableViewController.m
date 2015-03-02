@@ -71,7 +71,7 @@
         [[RKClient sharedClient] linksInSubredditWithName:subreddit pagination:[RKPagination paginationWithLimit:25] completion:^(NSArray *collection, RKPagination *pagination, NSError *error) {
             
             self.arraysOfLinks[subreddit] = collection;
-            [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+            [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
         }];
     }
     
@@ -81,10 +81,6 @@
 
 - (void)setUpLinks {
     
-//    [[RKClient sharedClient] linksInSubredditWithName:@"funny" pagination:[RKPagination paginationWithLimit:50] completion:^(NSArray *collection, RKPagination *pagination, NSError *error) {
-//        self.arrayOfLinks = collection;
-//        [self.tableView reloadData];
-//    }];
 }
 
 

@@ -10,9 +10,8 @@
 
 @interface SubRedditTableViewCell : UITableViewCell
 
-@property (strong, nonatomic) IBOutlet UIView *SubRedditContent;
 @property (weak, nonatomic) IBOutlet UILabel *subRedditLabel;
-@property (strong, nonatomic) UICollectionView * postCollectionView;
+@property (strong, nonatomic) IBOutlet UICollectionView * postCollectionView;
 - (void)subRedditContent;
 
 @end
