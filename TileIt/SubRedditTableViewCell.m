@@ -18,12 +18,6 @@
 
 @implementation SubRedditTableViewCell
 
-//-(UILabel *)subRedditLabel {
-//    
-//    self.SubRedditLabel.text = [];
-//    return self;
-//}
-
 - (void)subRedditContent {
     if (!self.postCollectionView) {
         

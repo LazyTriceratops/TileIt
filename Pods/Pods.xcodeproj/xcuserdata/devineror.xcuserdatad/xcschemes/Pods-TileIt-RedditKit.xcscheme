@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92D38EC8930DFEB594CF96F8"
+               BlueprintIdentifier = "3D26806399383C4AB21554CA"
                BuildableName = "libPods-TileIt-RedditKit.a"
                BlueprintName = "Pods-TileIt-RedditKit"
                ReferencedContainer = "container:Pods.xcodeproj">

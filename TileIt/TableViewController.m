@@ -47,6 +47,9 @@
     
     SubRedditTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"subRedditCell"];
     [cell subRedditContent];
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
 //    RKLink *linkForCell = [self.arrayOfLinks objectAtIndex:indexPath.row];
 
     NSString * subreddit = [[RedditController sharedInstance].VanillaSubReddits objectAtIndex:indexPath.row];

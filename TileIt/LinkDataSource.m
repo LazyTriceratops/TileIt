@@ -9,6 +9,7 @@
 #import "LinkDataSource.h"
 #import "PostCollectionViewCell.h"
 #import <RedditKit/RedditKit.h>
+#import <UIImageView+AFNetworking.h>
 
 @implementation LinkDataSource
 
@@ -23,14 +24,10 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PostCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     
-    
-    
-//    cell.frame = CGRectMake(0, 0, 200, 350);
-    
     RKLink * link = self.links[indexPath.row];
-    cell.label.text = link.title;
-//    cell.content.subviews = 
-//    cell.content = link.URL;
+    
+    [cell updateWithLink:link];
+
     return cell;
 }
 

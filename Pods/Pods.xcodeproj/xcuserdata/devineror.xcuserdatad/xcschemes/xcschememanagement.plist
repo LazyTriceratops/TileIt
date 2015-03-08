@@ -8,76 +8,49 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-TileIt-Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Pods-TileIt-RedditKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>Pods-TileIt.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03721153AB96AF1838C92E9F</key>
+		<key>2A954B6F2D67A2865CA1A142</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>03D261A553F5BB6E0E0F83C9</key>
+		<key>3AC43C1F4B6E3B0A5931D675</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0A10A0BF3CFC4B898B55A9A0</key>
+		<key>3D26806399383C4AB21554CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2325E7AD79F602991EB181DB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>245511F6B549AE394228DF2C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5125E696592A1466A155324D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>54DFE43A456F49AB4DF94D88</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>63EF61863100F813EC42624C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>92D38EC8930DFEB594CF96F8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>94966088F26C3209E17BA0BB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EBE243F73D6996A38079C8BE</key>
+		<key>BF2FFF0ACFEFBB551623F854</key>
 		<dict>
 			<key>primary</key>
 			<true/>
