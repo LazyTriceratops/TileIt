@@ -11,6 +11,8 @@
 		2E041F4B1A8FE3D0009C8857 /* PostCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E041F491A8FE3D0009C8857 /* PostCollectionViewCell.m */; };
 		2E041F4C1A8FE3D0009C8857 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E041F4A1A8FE3D0009C8857 /* PostCollectionViewCell.xib */; };
 		2E041F4F1A8FE4DB009C8857 /* SubRedditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E041F4E1A8FE4DB009C8857 /* SubRedditTableViewCell.m */; };
+		2E325DAA1AB28A6D006C2918 /* DetailPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E325DA91AB28A6D006C2918 /* DetailPostViewController.m */; };
+		2E325DAC1AB28A85006C2918 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E325DAB1AB28A85006C2918 /* Storyboard.storyboard */; };
 		2EC2A3311A7D2D64003D3837 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2A3301A7D2D64003D3837 /* main.m */; };
 		2EC2A3341A7D2D64003D3837 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2A3331A7D2D64003D3837 /* AppDelegate.m */; };
 		2EC2A3371A7D2D64003D3837 /* TileIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2A3351A7D2D64003D3837 /* TileIt.xcdatamodeld */; };
@@ -41,6 +43,9 @@
 		2E041F4A1A8FE3D0009C8857 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		2E041F4D1A8FE4DB009C8857 /* SubRedditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubRedditTableViewCell.h; sourceTree = "<group>"; };
 		2E041F4E1A8FE4DB009C8857 /* SubRedditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubRedditTableViewCell.m; sourceTree = "<group>"; };
+		2E325DA81AB28A6D006C2918 /* DetailPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPostViewController.h; sourceTree = "<group>"; };
+		2E325DA91AB28A6D006C2918 /* DetailPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPostViewController.m; sourceTree = "<group>"; };
+		2E325DAB1AB28A85006C2918 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		2EC2A32B1A7D2D64003D3837 /* TileIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TileIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC2A32F1A7D2D64003D3837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EC2A3301A7D2D64003D3837 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,6 +116,9 @@
 				2E041F481A8FE3D0009C8857 /* PostCollectionViewCell.h */,
 				2E041F491A8FE3D0009C8857 /* PostCollectionViewCell.m */,
 				2E041F4A1A8FE3D0009C8857 /* PostCollectionViewCell.xib */,
+				2E325DA81AB28A6D006C2918 /* DetailPostViewController.h */,
+				2E325DA91AB28A6D006C2918 /* DetailPostViewController.m */,
+				2E325DAB1AB28A85006C2918 /* Storyboard.storyboard */,
 			);
 			name = Posts;
 			sourceTree = "<group>";
@@ -284,6 +292,7 @@
 				2EC2A33D1A7D2D64003D3837 /* Main.storyboard in Resources */,
 				2EC2A3421A7D2D64003D3837 /* LaunchScreen.xib in Resources */,
 				2EC2A33F1A7D2D64003D3837 /* Images.xcassets in Resources */,
+				2E325DAC1AB28A85006C2918 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +346,7 @@
 				2ED90AB61A9ECC780099579A /* LinkDataSource.m in Sources */,
 				2E041F4F1A8FE4DB009C8857 /* SubRedditTableViewCell.m in Sources */,
 				2EDE49211A8D921D00D5C25D /* RedditController.m in Sources */,
+				2E325DAA1AB28A6D006C2918 /* DetailPostViewController.m in Sources */,
 				2EC2A3371A7D2D64003D3837 /* TileIt.xcdatamodeld in Sources */,
 				2EC2A3341A7D2D64003D3837 /* AppDelegate.m in Sources */,
 				2EDE49241A8D928800D5C25D /* TableViewController.m in Sources */,

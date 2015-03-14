@@ -49,8 +49,6 @@
     [cell subRedditContent];
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
-//    RKLink *linkForCell = [self.arrayOfLinks objectAtIndex:indexPath.row];
 
     NSString * subreddit = [[RedditController sharedInstance].VanillaSubReddits objectAtIndex:indexPath.row];
     NSArray * currentLinks = self.arraysOfLinks[subreddit];
@@ -63,10 +61,6 @@
     [cell.postCollectionView reloadData];
     
     cell.subRedditLabel.text = subreddit;
-    
-//    cell.textLabel.text = linkForCell.title;
-    
-//    [cell updateWithLink:linkForCell];
     
     cell.backgroundColor = [UIColor colorWithHue:0 saturation:0 brightness:0.94 alpha:1];
     
