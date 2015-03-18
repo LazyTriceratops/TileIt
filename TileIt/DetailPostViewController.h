@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "PostCollectionViewCell.h"
 
 @interface DetailPostViewController : TableViewController
 
