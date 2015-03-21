@@ -11,6 +11,7 @@
 @interface LinkDataSource : NSObject <UICollectionViewDataSource>
 
 @property (nonatomic, strong) NSArray * links;
--(void)registerCollectionView:(UICollectionView *)collectionView;
+
+-(void)registerCollectionView:(UICollectionView *)collectionView withPresentingViewController:(UIViewController *)viewController;
 
 @end

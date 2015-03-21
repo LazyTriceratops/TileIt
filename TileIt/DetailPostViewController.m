@@ -10,7 +10,8 @@
 #import "PostCollectionViewCell.h"
 #import "RedditController.h"
 
-@interface DetailPostViewController ()
+@interface DetailPostViewController () <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITextView *titleText;
 
 @end
 
@@ -20,8 +21,30 @@
     [super viewDidLoad];
 }
 
-- (void)updateWithLink:(RKLink *)link {
+- (void)registerTableView:(UITableView *)tableView {
     
 }
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *contentTitleCell = [tableView dequeueReusableCellWithIdentifier:@"titleCell"];
+    UITableViewCell *contentImageCell = [tableView dequeueReusableCellWithIdentifier:@"imageCell"];
+    UITableViewCell *contentMediaCell = [tableView dequeueReusableCellWithIdentifier:@"mediaCell"];
+    UITableViewCell *contentCommentCell = [tableView dequeueReusableCellWithIdentifier:@"commentCell"];
+    
+    
+    return contentTitleCell, contentImageCell, contentMediaCell, contentCommentCell;
+}
+
+- (void)updateWithLink:(RKLink *)link {
+    
+    self.titleText.text = link.title;
+}
+
 
 @end

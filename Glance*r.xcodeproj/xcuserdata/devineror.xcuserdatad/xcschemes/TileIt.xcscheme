@@ -17,7 +17,7 @@
                BlueprintIdentifier = "2EC2A32A1A7D2D64003D3837"
                BuildableName = "TileIt.app"
                BlueprintName = "TileIt"
-               ReferencedContainer = "container:TileIt.xcodeproj">
+               ReferencedContainer = "container:Glance*r.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "2EC2A3461A7D2D64003D3837"
                BuildableName = "TileItTests.xctest"
                BlueprintName = "TileItTests"
-               ReferencedContainer = "container:TileIt.xcodeproj">
+               ReferencedContainer = "container:Glance*r.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "2EC2A3461A7D2D64003D3837"
                BuildableName = "TileItTests.xctest"
                BlueprintName = "TileItTests"
-               ReferencedContainer = "container:TileIt.xcodeproj">
+               ReferencedContainer = "container:Glance*r.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +59,7 @@
             BlueprintIdentifier = "2EC2A32A1A7D2D64003D3837"
             BuildableName = "TileIt.app"
             BlueprintName = "TileIt"
-            ReferencedContainer = "container:TileIt.xcodeproj">
+            ReferencedContainer = "container:Glance*r.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -72,13 +72,14 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2EC2A32A1A7D2D64003D3837"
             BuildableName = "TileIt.app"
             BlueprintName = "TileIt"
-            ReferencedContainer = "container:TileIt.xcodeproj">
+            ReferencedContainer = "container:Glance*r.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -90,13 +91,14 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2EC2A32A1A7D2D64003D3837"
             BuildableName = "TileIt.app"
             BlueprintName = "TileIt"
-            ReferencedContainer = "container:TileIt.xcodeproj">
+            ReferencedContainer = "container:Glance*r.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

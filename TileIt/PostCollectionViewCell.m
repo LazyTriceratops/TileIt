@@ -8,6 +8,11 @@
 
 #import "PostCollectionViewCell.h"
 #import "UIImageView+AFNetworking.h"
+#import "DetailPostViewController.h"
+
+@interface PostCollectionViewCell () <UIWebViewDelegate>
+
+@end
 
 @implementation PostCollectionViewCell
 
@@ -27,16 +32,11 @@
     
     //Reddit Post Title
     self.label.text = link.title;
-//    if (!link.thumbnailURL) {
-//        self.content.hidden = YES;
-//        self.labelConstraint.
-//    }
     
     //Reddit Post Image Content
     self.content.image = nil;
     [self.content setImageWithURL:link.thumbnailURL];
     
-//    [self.content setImageWithURL:link.URL];
     
     //Reddit Post Heading Content
     self.submittingUser.text = link.author;
@@ -55,7 +55,7 @@
         self.NSFW.frame = self.content.frame;
         self.content.backgroundColor = [UIColor colorWithHue:0.62 saturation:0.14 brightness:0.46 alpha:1];
         self.NSFW.text = @"NSFW";
-        self.NSFW.font = [UIFont fontWithName:@"" size:18];
+        self.NSFW.font = [UIFont fontWithName:@"Helvetica" size:18];
     };
     
     //Sticked posts
@@ -67,6 +67,17 @@
     }
     
     // update any other cell information from the link here
+    
+}
+
+- (void)applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
+    
+}
+
+- (void)didTransitionFromLayout:(UICollectionViewLayout *)oldLayout toLayout:(UICollectionViewLayout *)newLayout {
+    
+    DetailPostViewController *detailPostViewController = [DetailPostViewController new];
+    RKLink *link = link;
     
     
 }

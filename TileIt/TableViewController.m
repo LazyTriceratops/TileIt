@@ -14,10 +14,14 @@
 
 #import "RedditController.h"
 
-@interface TableViewController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
+#import "DetailWebViewController.h"
+#import "DetailPostViewController.h"
+
+@interface TableViewController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate>
 
 @property (strong, nonatomic) NSMutableDictionary *arraysOfLinks; // don't keep this here, testing only
 @property (strong, nonatomic) NSMutableDictionary *dataSources; // don't keep this here, testing only
+@property (strong, nonatomic) UIWebView *permalinkWebview;
 
 @end
 
@@ -55,12 +59,15 @@
     
     LinkDataSource * dataSource = [LinkDataSource new];
     self.dataSources[subreddit] = dataSource;
-    [dataSource registerCollectionView:cell.postCollectionView];
+    [dataSource registerCollectionView:cell.postCollectionView withPresentingViewController:self];
     dataSource.links = currentLinks;
     cell.postCollectionView.dataSource = dataSource;
     [cell.postCollectionView reloadData];
     
+    cell.postCollectionView.delegate = self;
+    
     cell.subRedditLabel.text = subreddit;
+    
     
     cell.backgroundColor = [UIColor colorWithHue:0 saturation:0 brightness:0.94 alpha:1];
     
@@ -74,6 +81,31 @@
     
     return cell;
     
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+
+    // Failed UICollectionViewLayout strategy
+//    UICollectionViewFlowLayout *detailedLayout = [UICollectionViewFlowLayout new];
+//    detailedLayout.itemSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height - 30);
+//    detailedLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+//    [collectionView setCollectionViewLayout:detailedLayout animated:YES];
+    
+    // Failed lame strategy
+//    DetailPostViewController *detailPostViewController = [DetailPostViewController new];
+//    RKLink *link = self.links[indexPath.row];
+//    [detailPostViewController updateWithLink:link];
+//    [self.presentingViewController.navigationController pushViewController:detailPostViewController animated:YES];
+    
+    
+    // Prehistoric WebView Strategy
+    //    DetailWebViewController *detailedWebViewController = [DetailWebViewController new];
+    //
+    //    RKLink *link = self.links[indexPath.item];
+    //
+    //    [detailedWebViewController updateWithLink:link];
+    //
+    //    [self.presentingViewController.navigationController pushViewController:detailedWebViewController animated:YES];
 }
 
 - (void)setUpLinks {

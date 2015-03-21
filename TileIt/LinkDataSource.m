@@ -10,11 +10,21 @@
 #import "PostCollectionViewCell.h"
 #import <RedditKit/RedditKit.h>
 #import <UIImageView+AFNetworking.h>
+#import "DetailWebViewController.h"
+#import "DetailPostViewController.h"
+
+@interface LinkDataSource ()
+
+@property (strong,nonatomic) UIViewController *presentingViewController;
+
+@end
 
 @implementation LinkDataSource
 
--(void)registerCollectionView:(UICollectionView *)collectionView {
+-(void)registerCollectionView:(UICollectionView *)collectionView withPresentingViewController:(UIViewController *)viewController {
     [collectionView registerNib:[UINib nibWithNibName:@"PostCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
+    
+    self.presentingViewController = viewController;
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {

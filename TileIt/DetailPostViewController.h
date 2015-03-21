@@ -11,4 +11,6 @@
 
 @interface DetailPostViewController : TableViewController
 
+- (void)updateWithLink:(RKLink *)link;
+
 @end
