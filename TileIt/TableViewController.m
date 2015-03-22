@@ -15,7 +15,6 @@
 #import "RedditController.h"
 
 #import "DetailWebViewController.h"
-#import "DetailPostViewController.h"
 
 @interface TableViewController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate>
 
@@ -80,6 +79,11 @@
     }
     
     return cell;
+    
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    // use this to make a pull to refresh.
     
 }
 

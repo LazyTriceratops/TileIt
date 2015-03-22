@@ -11,8 +11,6 @@
 		2E041F4B1A8FE3D0009C8857 /* PostCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E041F491A8FE3D0009C8857 /* PostCollectionViewCell.m */; };
 		2E041F4C1A8FE3D0009C8857 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E041F4A1A8FE3D0009C8857 /* PostCollectionViewCell.xib */; };
 		2E041F4F1A8FE4DB009C8857 /* SubRedditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E041F4E1A8FE4DB009C8857 /* SubRedditTableViewCell.m */; };
-		2E325DAA1AB28A6D006C2918 /* DetailPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E325DA91AB28A6D006C2918 /* DetailPostViewController.m */; };
-		2E325DAC1AB28A85006C2918 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E325DAB1AB28A85006C2918 /* Storyboard.storyboard */; };
 		2E87BA741ABA4A7500688C42 /* DetailWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E87BA731ABA4A7500688C42 /* DetailWebViewController.m */; };
 		2EC2A3311A7D2D64003D3837 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2A3301A7D2D64003D3837 /* main.m */; };
 		2EC2A3341A7D2D64003D3837 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2A3331A7D2D64003D3837 /* AppDelegate.m */; };
@@ -25,6 +23,10 @@
 		2EDE49211A8D921D00D5C25D /* RedditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49201A8D921D00D5C25D /* RedditController.m */; };
 		2EDE49241A8D928800D5C25D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49231A8D928800D5C25D /* TableViewController.m */; };
 		2EDE492A1A8D92C700D5C25D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49291A8D92C700D5C25D /* SettingsViewController.m */; };
+		2EFECF5A1ABF71360007BA3B /* Detailed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFECF591ABF71360007BA3B /* Detailed.storyboard */; };
+		2EFECF5E1ABF7B500007BA3B /* DetailCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFECF5D1ABF7B500007BA3B /* DetailCollectionViewController.m */; };
+		2EFECF611ABF7B6D0007BA3B /* DetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFECF601ABF7B6D0007BA3B /* DetailCollectionViewCell.m */; };
+		2EFECF641ABF7B970007BA3B /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFECF631ABF7B970007BA3B /* DetailTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +46,6 @@
 		2E041F4A1A8FE3D0009C8857 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		2E041F4D1A8FE4DB009C8857 /* SubRedditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubRedditTableViewCell.h; sourceTree = "<group>"; };
 		2E041F4E1A8FE4DB009C8857 /* SubRedditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubRedditTableViewCell.m; sourceTree = "<group>"; };
-		2E325DA81AB28A6D006C2918 /* DetailPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPostViewController.h; sourceTree = "<group>"; };
-		2E325DA91AB28A6D006C2918 /* DetailPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPostViewController.m; sourceTree = "<group>"; };
-		2E325DAB1AB28A85006C2918 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		2E87BA721ABA4A7500688C42 /* DetailWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailWebViewController.h; sourceTree = "<group>"; };
 		2E87BA731ABA4A7500688C42 /* DetailWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailWebViewController.m; sourceTree = "<group>"; };
 		2EC2A32B1A7D2D64003D3837 /* TileIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TileIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +68,13 @@
 		2EDE49231A8D928800D5C25D /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		2EDE49281A8D92C700D5C25D /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		2EDE49291A8D92C700D5C25D /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		2EFECF591ABF71360007BA3B /* Detailed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detailed.storyboard; sourceTree = "<group>"; };
+		2EFECF5C1ABF7B500007BA3B /* DetailCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCollectionViewController.h; sourceTree = "<group>"; };
+		2EFECF5D1ABF7B500007BA3B /* DetailCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCollectionViewController.m; sourceTree = "<group>"; };
+		2EFECF5F1ABF7B6D0007BA3B /* DetailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCollectionViewCell.h; sourceTree = "<group>"; };
+		2EFECF601ABF7B6D0007BA3B /* DetailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCollectionViewCell.m; sourceTree = "<group>"; };
+		2EFECF621ABF7B970007BA3B /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		2EFECF631ABF7B970007BA3B /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
 		AC7F176827042040F0AEA054 /* Pods-TileIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TileIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-TileIt/Pods-TileIt.release.xcconfig"; sourceTree = "<group>"; };
 		F720E1E5E0DEADAD9308B7A0 /* libPods-TileIt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TileIt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,11 +125,7 @@
 				2E041F481A8FE3D0009C8857 /* PostCollectionViewCell.h */,
 				2E041F491A8FE3D0009C8857 /* PostCollectionViewCell.m */,
 				2E041F4A1A8FE3D0009C8857 /* PostCollectionViewCell.xib */,
-				2E325DA81AB28A6D006C2918 /* DetailPostViewController.h */,
-				2E325DA91AB28A6D006C2918 /* DetailPostViewController.m */,
-				2E325DAB1AB28A85006C2918 /* Storyboard.storyboard */,
-				2E87BA721ABA4A7500688C42 /* DetailWebViewController.h */,
-				2E87BA731ABA4A7500688C42 /* DetailWebViewController.m */,
+				2EFECF531ABF61890007BA3B /* Details */,
 			);
 			name = Posts;
 			sourceTree = "<group>";
@@ -200,6 +202,30 @@
 				2EC2A34C1A7D2D64003D3837 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EFECF531ABF61890007BA3B /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				2EFECF591ABF71360007BA3B /* Detailed.storyboard */,
+				2EFECF5C1ABF7B500007BA3B /* DetailCollectionViewController.h */,
+				2EFECF5D1ABF7B500007BA3B /* DetailCollectionViewController.m */,
+				2EFECF5F1ABF7B6D0007BA3B /* DetailCollectionViewCell.h */,
+				2EFECF601ABF7B6D0007BA3B /* DetailCollectionViewCell.m */,
+				2EFECF621ABF7B970007BA3B /* DetailTableViewCell.h */,
+				2EFECF631ABF7B970007BA3B /* DetailTableViewCell.m */,
+				2EFECF5B1ABF7B1A0007BA3B /* WebView */,
+			);
+			name = Details;
+			sourceTree = "<group>";
+		};
+		2EFECF5B1ABF7B1A0007BA3B /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				2E87BA721ABA4A7500688C42 /* DetailWebViewController.h */,
+				2E87BA731ABA4A7500688C42 /* DetailWebViewController.m */,
+			);
+			name = WebView;
 			sourceTree = "<group>";
 		};
 		4B3F1DC7951CD6FA76695D4A /* Pods */ = {
@@ -298,7 +324,7 @@
 				2EC2A33D1A7D2D64003D3837 /* Main.storyboard in Resources */,
 				2EC2A3421A7D2D64003D3837 /* LaunchScreen.xib in Resources */,
 				2EC2A33F1A7D2D64003D3837 /* Images.xcassets in Resources */,
-				2E325DAC1AB28A85006C2918 /* Storyboard.storyboard in Resources */,
+				2EFECF5A1ABF71360007BA3B /* Detailed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,9 +376,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ED90AB61A9ECC780099579A /* LinkDataSource.m in Sources */,
+				2EFECF5E1ABF7B500007BA3B /* DetailCollectionViewController.m in Sources */,
+				2EFECF641ABF7B970007BA3B /* DetailTableViewCell.m in Sources */,
 				2E041F4F1A8FE4DB009C8857 /* SubRedditTableViewCell.m in Sources */,
+				2EFECF611ABF7B6D0007BA3B /* DetailCollectionViewCell.m in Sources */,
 				2EDE49211A8D921D00D5C25D /* RedditController.m in Sources */,
-				2E325DAA1AB28A6D006C2918 /* DetailPostViewController.m in Sources */,
 				2EC2A3371A7D2D64003D3837 /* TileIt.xcdatamodeld in Sources */,
 				2EC2A3341A7D2D64003D3837 /* AppDelegate.m in Sources */,
 				2EDE49241A8D928800D5C25D /* TableViewController.m in Sources */,

@@ -11,7 +11,6 @@
 #import <RedditKit/RedditKit.h>
 #import <UIImageView+AFNetworking.h>
 #import "DetailWebViewController.h"
-#import "DetailPostViewController.h"
 
 @interface LinkDataSource ()
 
