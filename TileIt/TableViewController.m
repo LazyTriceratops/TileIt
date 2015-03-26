@@ -14,6 +14,7 @@
 
 #import "RedditController.h"
 
+#import "DetailCollectionViewController.h"
 #import "DetailWebViewController.h"
 
 @interface TableViewController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate>
@@ -88,7 +89,16 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-
+    
+    UIStoryboard *detailStoryBoard = [UIStoryboard storyboardWithName:@"Detailed" bundle:nil];
+    UINavigationController *nav = [detailStoryBoard instantiateInitialViewController];
+    PostCollectionViewCell * collectionViewCell = nav.viewControllers[0];
+//    collectionViewCell.self =
+    
+//    DetailCollectionViewController *detailCollectionViewController = [[DetailCollectionViewController alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
+    
+    [self presentViewController:nav animated:YES completion:nil];
+    
     // Failed UICollectionViewLayout strategy
 //    UICollectionViewFlowLayout *detailedLayout = [UICollectionViewFlowLayout new];
 //    detailedLayout.itemSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height - 30);

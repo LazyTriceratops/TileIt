@@ -8,7 +8,7 @@
 
 #import "PostCollectionViewCell.h"
 #import "UIImageView+AFNetworking.h"
-#import "DetailPostTableViewController.h"
+#import "DetailTableViewCell.h"
 
 @interface PostCollectionViewCell () <UIWebViewDelegate>
 
@@ -76,7 +76,7 @@
 
 - (void)didTransitionFromLayout:(UICollectionViewLayout *)oldLayout toLayout:(UICollectionViewLayout *)newLayout {
     
-    DetailPostTableViewController *detailPostViewController = [DetailPostTableViewController new];
+    DetailTableViewCell *detailPostViewController = [DetailTableViewCell new];
     RKLink *link = link;
     
     

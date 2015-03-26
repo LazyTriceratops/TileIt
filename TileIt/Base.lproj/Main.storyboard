@@ -48,7 +48,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NW0-kh-cLG">
-                                            <rect key="frame" x="8" y="50" width="584" height="350"/>
+                                            <rect key="frame" x="0.0" y="50" width="600" height="350"/>
                                             <color key="backgroundColor" red="0.94659485479797978" green="0.94659485479797978" blue="0.94659485479797978" alpha="1" colorSpace="calibratedRGB"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6Zq-BY-G2a">
                                                 <size key="itemSize" width="200" height="350"/>
@@ -62,7 +62,7 @@
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="NW0-kh-cLG" secondAttribute="bottom" constant="-8.5" id="RsA-g0-CZt"/>
                                         <constraint firstItem="nIL-WN-KiJ" firstAttribute="leading" secondItem="rYn-Te-moz" secondAttribute="leadingMargin" id="TL8-Nf-xrN"/>
-                                        <constraint firstItem="NW0-kh-cLG" firstAttribute="leading" secondItem="rYn-Te-moz" secondAttribute="leadingMargin" id="Yyl-lI-veo"/>
+                                        <constraint firstItem="NW0-kh-cLG" firstAttribute="leading" secondItem="rYn-Te-moz" secondAttribute="leadingMargin" constant="-8" id="Yyl-lI-veo"/>
                                         <constraint firstAttribute="centerX" secondItem="NW0-kh-cLG" secondAttribute="centerX" id="eoh-BB-lzk"/>
                                         <constraint firstItem="NW0-kh-cLG" firstAttribute="top" secondItem="rYn-Te-moz" secondAttribute="topMargin" constant="42" id="mcM-vj-75v"/>
                                         <constraint firstItem="NW0-kh-cLG" firstAttribute="top" secondItem="nIL-WN-KiJ" secondAttribute="bottom" constant="16" id="nCZ-Ki-bIK"/>

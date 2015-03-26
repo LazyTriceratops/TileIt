@@ -10,4 +10,8 @@
 
 @implementation DetailCollectionViewCell
 
+- (void)ViewDidLoad {
+    
+}
+
 @end
