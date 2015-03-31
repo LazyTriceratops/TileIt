@@ -24,10 +24,6 @@
 
 @implementation TempDetailViewController
 
--(void)viewDidLoad {
-    
-}
-
 - (void)updateWithLink:(RKLink *)link {
     
     // Navigation Title
@@ -45,7 +41,7 @@
     // Image Content
     self.imageContent.image = nil;
 //    if (link.URL) {
-        [self.imageContent setImageWithURL:link.URL];
+    [self.imageContent setImageWithURL:link.URL];
 //    } else if (link.media) {
 //        [self.imageContent setImageWithURL:link.media];
 //    }
