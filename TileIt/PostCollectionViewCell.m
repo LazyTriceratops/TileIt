@@ -29,6 +29,7 @@
     if (link.visited) {
 //        self.visitedCircle.hidden;
     }
+    self.visitedCircle.hidden = YES;
     
     //Reddit Post Title
     self.label.text = link.title;
@@ -74,12 +75,12 @@
     
 }
 
-- (void)didTransitionFromLayout:(UICollectionViewLayout *)oldLayout toLayout:(UICollectionViewLayout *)newLayout {
-    
-    DetailTableViewCell *detailPostViewController = [DetailTableViewCell new];
-    RKLink *link = link;
-    
-    
-}
+//- (void)didTransitionFromLayout:(UICollectionViewLayout *)oldLayout toLayout:(UICollectionViewLayout *)newLayout {
+//    
+//    DetailTableViewCell *detailPostViewController = [DetailTableViewCell new];
+//    RKLink *link = link;
+//    
+//    
+//}
 
 @end

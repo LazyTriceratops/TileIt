@@ -8,10 +8,11 @@
         <scene sceneID="JfH-74-PeG">
             <objects>
                 <collectionViewController id="aYt-uC-A4O" customClass="DetailCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="XgW-vs-a78">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="XgW-vs-a78">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eRR-D0-ebu">
                             <size key="itemSize" width="508.5" height="505"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -94,9 +95,12 @@
         <scene sceneID="XP2-Qo-O87">
             <objects>
                 <navigationController id="s4X-cV-pmO" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZAM-Co-9GG">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" id="ZAM-Co-9GG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="aYt-uC-A4O" kind="relationship" relationship="rootViewController" id="JbG-rm-TGx"/>

@@ -17,6 +17,9 @@
 #import "DetailCollectionViewController.h"
 #import "DetailWebViewController.h"
 
+// Temporary Detail View Hack
+#import "TempDetailViewController.h"
+
 @interface TableViewController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate>
 
 @property (strong, nonatomic) NSMutableDictionary *arraysOfLinks; // don't keep this here, testing only
@@ -30,7 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setUpLinks];
+//    [self setUpLinks];
     self.arraysOfLinks = [NSMutableDictionary new];
         self.dataSources = [NSMutableDictionary new];
 //    for (NSString * str in [RedditController sharedInstance].VanillaSubReddits) {
@@ -89,42 +92,18 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UIStoryboard *detailStoryBoard = [UIStoryboard storyboardWithName:@"Detailed" bundle:nil];
-    UINavigationController *nav = [detailStoryBoard instantiateInitialViewController];
-    PostCollectionViewCell * collectionViewCell = nav.viewControllers[0];
-//    collectionViewCell.self =
-    
-//    DetailCollectionViewController *detailCollectionViewController = [[DetailCollectionViewController alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
-    
-    [self presentViewController:nav animated:YES completion:nil];
-    
-    // Failed UICollectionViewLayout strategy
-//    UICollectionViewFlowLayout *detailedLayout = [UICollectionViewFlowLayout new];
-//    detailedLayout.itemSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height - 30);
-//    detailedLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-//    [collectionView setCollectionViewLayout:detailedLayout animated:YES];
-    
-    // Failed lame strategy
-//    DetailPostViewController *detailPostViewController = [DetailPostViewController new];
-//    RKLink *link = self.links[indexPath.row];
-//    [detailPostViewController updateWithLink:link];
-//    [self.presentingViewController.navigationController pushViewController:detailPostViewController animated:YES];
-    
-    
-    // Prehistoric WebView Strategy
-    //    DetailWebViewController *detailedWebViewController = [DetailWebViewController new];
-    //
-    //    RKLink *link = self.links[indexPath.item];
-    //
-    //    [detailedWebViewController updateWithLink:link];
-    //
-    //    [self.presentingViewController.navigationController pushViewController:detailedWebViewController animated:YES];
-}
 
-- (void)setUpLinks {
+    TempDetailViewController *tempVC = [TempDetailViewController new];
+    [self.navigationController presentViewController:tempVC animated:YES completion:nil];
     
-}
+    // Actual Detail View, DON'T Delete!
+//    UIStoryboard *detailStoryBoard = [UIStoryboard storyboardWithName:@"Detailed" bundle:nil];
+//    UINavigationController *nav = [detailStoryBoard instantiateInitialViewController];
+//    PostCollectionViewCell * collectionViewCell = nav.viewControllers[0];
+//    
+//    
+//    [self presentViewController:nav animated:YES completion:nil];
 
+}
 
 @end

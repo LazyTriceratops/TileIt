@@ -28,6 +28,7 @@
 		2EFECF611ABF7B6D0007BA3B /* DetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFECF601ABF7B6D0007BA3B /* DetailCollectionViewCell.m */; };
 		2EFECF641ABF7B970007BA3B /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFECF631ABF7B970007BA3B /* DetailTableViewCell.m */; };
 		2EFECF671AC241800007BA3B /* DetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFECF661AC241800007BA3B /* DetailDataSource.m */; };
+		2EFECFBB1AC4FB540007BA3B /* TempDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFECFBA1AC4FB540007BA3B /* TempDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		2EFECF631ABF7B970007BA3B /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
 		2EFECF651AC241800007BA3B /* DetailDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailDataSource.h; sourceTree = "<group>"; };
 		2EFECF661AC241800007BA3B /* DetailDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailDataSource.m; sourceTree = "<group>"; };
+		2EFECFB91AC4FB540007BA3B /* TempDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempDetailViewController.h; sourceTree = "<group>"; };
+		2EFECFBA1AC4FB540007BA3B /* TempDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempDetailViewController.m; sourceTree = "<group>"; };
 		AC7F176827042040F0AEA054 /* Pods-TileIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TileIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-TileIt/Pods-TileIt.release.xcconfig"; sourceTree = "<group>"; };
 		F720E1E5E0DEADAD9308B7A0 /* libPods-TileIt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TileIt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +126,7 @@
 		2E041F511A8FE6E7009C8857 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
+				2EFECFAF1AC4EC370007BA3B /* TempDetailVC */,
 				2ED90AB41A9ECC780099579A /* LinkDataSource.h */,
 				2ED90AB51A9ECC780099579A /* LinkDataSource.m */,
 				2E041F481A8FE3D0009C8857 /* PostCollectionViewCell.h */,
@@ -239,6 +243,15 @@
 				2EFECF661AC241800007BA3B /* DetailDataSource.m */,
 			);
 			name = DetailDataSource;
+			sourceTree = "<group>";
+		};
+		2EFECFAF1AC4EC370007BA3B /* TempDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				2EFECFB91AC4FB540007BA3B /* TempDetailViewController.h */,
+				2EFECFBA1AC4FB540007BA3B /* TempDetailViewController.m */,
+			);
+			name = TempDetailVC;
 			sourceTree = "<group>";
 		};
 		4B3F1DC7951CD6FA76695D4A /* Pods */ = {
@@ -391,6 +404,7 @@
 				2ED90AB61A9ECC780099579A /* LinkDataSource.m in Sources */,
 				2EFECF671AC241800007BA3B /* DetailDataSource.m in Sources */,
 				2EFECF5E1ABF7B500007BA3B /* DetailCollectionViewController.m in Sources */,
+				2EFECFBB1AC4FB540007BA3B /* TempDetailViewController.m in Sources */,
 				2EFECF641ABF7B970007BA3B /* DetailTableViewCell.m in Sources */,
 				2E041F4F1A8FE4DB009C8857 /* SubRedditTableViewCell.m in Sources */,
 				2EFECF611ABF7B6D0007BA3B /* DetailCollectionViewCell.m in Sources */,

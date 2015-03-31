@@ -12,7 +12,9 @@
 #import <UIImageView+AFNetworking.h>
 #import "DetailWebViewController.h"
 
-@interface LinkDataSource ()
+#import "TempDetailViewController.h"
+
+@interface LinkDataSource () <UICollectionViewDelegate>
 
 @property (strong,nonatomic) UIViewController *presentingViewController;
 
