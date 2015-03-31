@@ -16,6 +16,9 @@
 @property (weak, nonatomic) IBOutlet UINavigationItem *subredditFullTitle;
 @property (weak, nonatomic) IBOutlet UITextView *postTitle;
 @property (weak, nonatomic) IBOutlet UIImageView *imageContent;
+@property (weak, nonatomic) IBOutlet UILabel *userName;
+@property (weak, nonatomic) IBOutlet UILabel *commentNumber;
+@property (weak, nonatomic) IBOutlet UILabel *karmaNumber;
 
 @end
 
@@ -46,6 +49,15 @@
 //    } else if (link.media) {
 //        [self.imageContent setImageWithURL:link.media];
 //    }
+    
+    // Submitting User
+    self.userName.text = link.author;
+    
+    // Comments
+    self.commentNumber.text = [NSString stringWithFormat:@"%lu",(unsigned long)link.totalComments];
+    
+    // Karma
+    self.karmaNumber.text = [NSString stringWithFormat:@"%lu",(unsigned long)link.upvotes];
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(dismiss)];
     self.navigationItem.leftBarButtonItem = backButton;

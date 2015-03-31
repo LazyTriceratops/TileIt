@@ -87,55 +87,6 @@
             </objects>
             <point key="canvasLocation" x="-551" y="-914"/>
         </scene>
-        <!--Temp Detail View Controller-->
-        <scene sceneID="rtX-NT-NdN">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ykn-5l-7ac" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="rg7-b5-2uT" customClass="TempDetailViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lR1-le-vje"/>
-                        <viewControllerLayoutGuide type="bottom" id="Fvl-zU-0p6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GxN-Mz-BLg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SaO-1j-0do">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="EEW-SX-u3E"/>
-                                </items>
-                            </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Title" translatesAutoresizingMaskIntoConstraints="NO" id="rHK-vV-F1R">
-                                <rect key="frame" x="0.0" y="44" width="600" height="114"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDI-te-OiK">
-                                <rect key="frame" x="0.0" y="166" width="600" height="400"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="rHK-vV-F1R" secondAttribute="centerY" constant="199" id="ESr-gh-XCE"/>
-                            <constraint firstItem="rHK-vV-F1R" firstAttribute="leading" secondItem="GxN-Mz-BLg" secondAttribute="leadingMargin" constant="-16" id="EYn-aX-ejN"/>
-                            <constraint firstAttribute="centerX" secondItem="rHK-vV-F1R" secondAttribute="centerX" id="IRL-0J-6pJ"/>
-                            <constraint firstItem="Fvl-zU-0p6" firstAttribute="top" secondItem="rHK-vV-F1R" secondAttribute="bottom" constant="442" id="Mll-K3-9nA"/>
-                            <constraint firstItem="Fvl-zU-0p6" firstAttribute="top" secondItem="rHK-vV-F1R" secondAttribute="bottom" constant="442" id="cqS-el-jS7"/>
-                            <constraint firstItem="rHK-vV-F1R" firstAttribute="top" secondItem="lR1-le-vje" secondAttribute="bottom" constant="24" id="j6I-Pa-TFT"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="imageContent" destination="lDI-te-OiK" id="lPg-0V-7Bg"/>
-                        <outlet property="postTitle" destination="rHK-vV-F1R" id="sRX-0z-bpR"/>
-                        <outlet property="subredditFullTitle" destination="EEW-SX-u3E" id="q5Y-ws-dEZ"/>
-                        <outlet property="subredditTitleLabel" destination="SaO-1j-0do" id="443-2f-5eC"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="268" y="-924"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="6I7-qI-H2u">
             <objects>

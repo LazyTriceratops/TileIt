@@ -93,8 +93,14 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 
-    TempDetailViewController *tempVC = [TempDetailViewController new];
-    [self.navigationController presentViewController:tempVC animated:YES completion:nil];
+//    TempDetailViewController *tempVC = [TempDetailViewController new];
+//    [self.navigationController presentViewController:tempVC animated:YES completion:nil];
+
+    UIStoryboard *tempDetailSB = [UIStoryboard storyboardWithName:@"TempDetail" bundle:nil];
+    UINavigationController *nav = [tempDetailSB instantiateInitialViewController];
+    TempDetailViewController * tempDetailView = nav.viewControllers[0];
+    
+    [self presentViewController:tempDetailView animated:YES completion:nil];
     
     // Actual Detail View, DON'T Delete!
 //    UIStoryboard *detailStoryBoard = [UIStoryboard storyboardWithName:@"Detailed" bundle:nil];
