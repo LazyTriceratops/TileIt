@@ -26,6 +26,9 @@
 
 - (void)updateWithLink:(RKLink *)link {
     
+    // importing link
+//    self.link = link;
+    
     // Navigation Title
     UINavigationItem *navTitle = [[UINavigationItem alloc] initWithTitle:link.subredditFullName];
     self.subredditFullTitle = navTitle;

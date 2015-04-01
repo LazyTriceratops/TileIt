@@ -272,9 +272,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2EC2A32A1A7D2D64003D3837 /* TileIt */ = {
+		2EC2A32A1A7D2D64003D3837 /* Glance*r */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EC2A3511A7D2D64003D3837 /* Build configuration list for PBXNativeTarget "TileIt" */;
+			buildConfigurationList = 2EC2A3511A7D2D64003D3837 /* Build configuration list for PBXNativeTarget "Glance*r" */;
 			buildPhases = (
 				2A3CE96485D03E4948F4D27C /* Check Pods Manifest.lock */,
 				2EC2A3271A7D2D64003D3837 /* Sources */,
@@ -286,7 +286,7 @@
 			);
 			dependencies = (
 			);
-			name = TileIt;
+			name = "Glance*r";
 			productName = TileIt;
 			productReference = 2EC2A32B1A7D2D64003D3837 /* TileIt.app */;
 			productType = "com.apple.product-type.application";
@@ -341,7 +341,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2EC2A32A1A7D2D64003D3837 /* TileIt */,
+				2EC2A32A1A7D2D64003D3837 /* Glance*r */,
 				2EC2A3461A7D2D64003D3837 /* TileItTests */,
 			);
 		};
@@ -440,7 +440,7 @@
 /* Begin PBXTargetDependency section */
 		2EC2A3491A7D2D64003D3837 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2EC2A32A1A7D2D64003D3837 /* TileIt */;
+			target = 2EC2A32A1A7D2D64003D3837 /* Glance*r */;
 			targetProxy = 2EC2A3481A7D2D64003D3837 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -615,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EC2A3511A7D2D64003D3837 /* Build configuration list for PBXNativeTarget "TileIt" */ = {
+		2EC2A3511A7D2D64003D3837 /* Build configuration list for PBXNativeTarget "Glance*r" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2EC2A3521A7D2D64003D3837 /* Debug */,

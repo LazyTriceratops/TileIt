@@ -75,12 +75,12 @@
     
 }
 
-//- (void)didTransitionFromLayout:(UICollectionViewLayout *)oldLayout toLayout:(UICollectionViewLayout *)newLayout {
-//    
-//    DetailTableViewCell *detailPostViewController = [DetailTableViewCell new];
-//    RKLink *link = link;
-//    
-//    
-//}
+- (void)didTransitionFromLayout:(UICollectionViewLayout *)oldLayout toLayout:(UICollectionViewLayout *)newLayout {
+    
+    DetailTableViewCell *detailPostViewController = [DetailTableViewCell new];
+    RKLink *link = link;
+    
+    
+}
 
 @end

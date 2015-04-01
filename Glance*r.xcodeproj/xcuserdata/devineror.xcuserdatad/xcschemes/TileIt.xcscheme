@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2EC2A32A1A7D2D64003D3837"
                BuildableName = "TileIt.app"
-               BlueprintName = "TileIt"
+               BlueprintName = "Glance*r"
                ReferencedContainer = "container:Glance*r.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -58,7 +58,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2EC2A32A1A7D2D64003D3837"
             BuildableName = "TileIt.app"
-            BlueprintName = "TileIt"
+            BlueprintName = "Glance*r"
             ReferencedContainer = "container:Glance*r.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -78,7 +78,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2EC2A32A1A7D2D64003D3837"
             BuildableName = "TileIt.app"
-            BlueprintName = "TileIt"
+            BlueprintName = "Glance*r"
             ReferencedContainer = "container:Glance*r.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -97,7 +97,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2EC2A32A1A7D2D64003D3837"
             BuildableName = "TileIt.app"
-            BlueprintName = "TileIt"
+            BlueprintName = "Glance*r"
             ReferencedContainer = "container:Glance*r.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

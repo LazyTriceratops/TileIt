@@ -50,13 +50,13 @@
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txe-0h-GDM">
-                                <rect key="frame" x="16" y="72" width="36" height="21"/>
+                                <rect key="frame" x="16" y="72" width="36" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.27330644949999999" green="0.34996208880000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Karma" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqv-DM-ubl">
-                                <rect key="frame" x="542" y="72" width="51" height="21"/>
+                                <rect key="frame" x="542" y="72" width="51" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.99215686270000003" green="0.45882352939999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -75,27 +75,28 @@
                             <constraint firstItem="txe-0h-GDM" firstAttribute="leading" secondItem="jPz-3W-IeQ" secondAttribute="leadingMargin" id="9tx-cb-eAS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="R9S-KU-wiS" secondAttribute="trailing" constant="-16" id="AKY-jA-D45"/>
                             <constraint firstItem="GbW-x9-Lfe" firstAttribute="top" secondItem="IfU-P4-ggC" secondAttribute="bottom" constant="44" id="Czn-3A-0CG"/>
-                            <constraint firstItem="GbW-x9-Lfe" firstAttribute="top" secondItem="IfU-P4-ggC" secondAttribute="bottom" constant="44" id="DzZ-xY-XsT"/>
+                            <constraint firstItem="txe-0h-GDM" firstAttribute="leading" secondItem="jPz-3W-IeQ" secondAttribute="leadingMargin" id="Id1-QN-SJk"/>
                             <constraint firstItem="R9S-KU-wiS" firstAttribute="top" secondItem="GbW-x9-Lfe" secondAttribute="bottom" constant="8" symbolic="YES" id="Iry-ya-4xd"/>
                             <constraint firstItem="iqv-DM-ubl" firstAttribute="leading" secondItem="CqJ-Tj-fqg" secondAttribute="trailing" constant="8" id="LG9-V2-Q0p"/>
                             <constraint firstItem="GbW-x9-Lfe" firstAttribute="leading" secondItem="jPz-3W-IeQ" secondAttribute="leadingMargin" constant="-16" id="NDV-hn-Mb2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GbW-x9-Lfe" secondAttribute="trailing" constant="-16" id="O74-YI-wKT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iqv-DM-ubl" secondAttribute="trailing" constant="-9" id="Opu-Cj-Vrw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="txe-0h-GDM" secondAttribute="trailing" constant="532" id="QcE-OS-FPG"/>
                             <constraint firstAttribute="centerX" secondItem="iqv-DM-ubl" secondAttribute="centerX" constant="-267.5" id="ULW-0k-jFW"/>
                             <constraint firstItem="GbW-x9-Lfe" firstAttribute="leading" secondItem="R9S-KU-wiS" secondAttribute="leading" id="UPz-yF-3BL"/>
                             <constraint firstAttribute="centerX" secondItem="CqJ-Tj-fqg" secondAttribute="centerX" constant="-196" id="X1c-CW-8uZ"/>
                             <constraint firstAttribute="centerY" secondItem="R9S-KU-wiS" secondAttribute="centerY" constant="-118.5" id="YHf-uF-6ct"/>
                             <constraint firstItem="txe-0h-GDM" firstAttribute="top" secondItem="IfU-P4-ggC" secondAttribute="bottom" constant="8" id="d0A-N9-2kF"/>
-                            <constraint firstAttribute="centerY" secondItem="txe-0h-GDM" secondAttribute="centerY" constant="217.5" id="fSm-qu-QSz"/>
-                            <constraint firstItem="CqJ-Tj-fqg" firstAttribute="leading" secondItem="jPz-3W-IeQ" secondAttribute="leadingMargin" constant="442" id="gSl-1c-CNb"/>
-                            <constraint firstItem="GbW-x9-Lfe" firstAttribute="top" secondItem="CqJ-Tj-fqg" secondAttribute="bottom" constant="15" id="h2F-DF-Tbp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CqJ-Tj-fqg" secondAttribute="trailing" constant="50" id="hQq-0l-uhm"/>
                             <constraint firstItem="iqv-DM-ubl" firstAttribute="top" secondItem="IfU-P4-ggC" secondAttribute="bottom" constant="8" id="pof-hI-fzM"/>
                             <constraint firstItem="CqJ-Tj-fqg" firstAttribute="top" secondItem="IfU-P4-ggC" secondAttribute="bottom" constant="8" id="rcD-g0-g9Z"/>
+                            <constraint firstItem="R9S-KU-wiS" firstAttribute="leading" secondItem="jPz-3W-IeQ" secondAttribute="leadingMargin" constant="-16" id="vFa-HS-KvT"/>
                             <constraint firstAttribute="centerX" secondItem="CqJ-Tj-fqg" secondAttribute="centerX" constant="-196" id="x7l-jg-AwN"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="9tx-cb-eAS"/>
+                                <exclude reference="25h-f3-NM6"/>
+                                <exclude reference="UPz-yF-3BL"/>
                                 <exclude reference="X1c-CW-8uZ"/>
                                 <exclude reference="x7l-jg-AwN"/>
                                 <exclude reference="ULW-0k-jFW"/>
