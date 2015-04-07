@@ -24,6 +24,18 @@
 		2EDE49211A8D921D00D5C25D /* RedditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49201A8D921D00D5C25D /* RedditController.m */; };
 		2EDE49241A8D928800D5C25D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49231A8D928800D5C25D /* TableViewController.m */; };
 		2EDE492A1A8D92C700D5C25D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE49291A8D92C700D5C25D /* SettingsViewController.m */; };
+		2EF8D0CC1ACE310400B44A92 /* SelfTextDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8D0CA1ACE310400B44A92 /* SelfTextDetailTableViewCell.m */; };
+		2EF8D0CD1ACE310400B44A92 /* SelfTextDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8D0CB1ACE310400B44A92 /* SelfTextDetailTableViewCell.xib */; };
+		2EF8D0D11ACE314000B44A92 /* ImageDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8D0CF1ACE314000B44A92 /* ImageDetailTableViewCell.m */; };
+		2EF8D0D21ACE314000B44A92 /* ImageDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8D0D01ACE314000B44A92 /* ImageDetailTableViewCell.xib */; };
+		2EF8D0D61ACE31A900B44A92 /* MediaDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8D0D41ACE31A900B44A92 /* MediaDetailTableViewCell.m */; };
+		2EF8D0D71ACE31A900B44A92 /* MediaDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8D0D51ACE31A900B44A92 /* MediaDetailTableViewCell.xib */; };
+		2EF8D0DB1ACE31D300B44A92 /* CommentDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8D0D91ACE31D300B44A92 /* CommentDetailTableViewCell.m */; };
+		2EF8D0DC1ACE31D300B44A92 /* CommentDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8D0DA1ACE31D300B44A92 /* CommentDetailTableViewCell.xib */; };
+		2EF8D0E01ACE321F00B44A92 /* HeaderDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8D0DE1ACE321F00B44A92 /* HeaderDetailTableViewCell.m */; };
+		2EF8D0E11ACE321F00B44A92 /* HeaderDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8D0DF1ACE321F00B44A92 /* HeaderDetailTableViewCell.xib */; };
+		2EF8D0E51ACE330300B44A92 /* TitleDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8D0E31ACE330300B44A92 /* TitleDetailTableViewCell.m */; };
+		2EF8D0E61ACE330300B44A92 /* TitleDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8D0E41ACE330300B44A92 /* TitleDetailTableViewCell.xib */; };
 		2EFECF5A1ABF71360007BA3B /* Detailed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFECF591ABF71360007BA3B /* Detailed.storyboard */; };
 		2EFECF5E1ABF7B500007BA3B /* DetailCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFECF5D1ABF7B500007BA3B /* DetailCollectionViewController.m */; };
 		2EFECF611ABF7B6D0007BA3B /* DetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFECF601ABF7B6D0007BA3B /* DetailCollectionViewCell.m */; };
@@ -73,6 +85,24 @@
 		2EDE49231A8D928800D5C25D /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		2EDE49281A8D92C700D5C25D /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		2EDE49291A8D92C700D5C25D /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		2EF8D0C91ACE310400B44A92 /* SelfTextDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfTextDetailTableViewCell.h; sourceTree = "<group>"; };
+		2EF8D0CA1ACE310400B44A92 /* SelfTextDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfTextDetailTableViewCell.m; sourceTree = "<group>"; };
+		2EF8D0CB1ACE310400B44A92 /* SelfTextDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelfTextDetailTableViewCell.xib; sourceTree = "<group>"; };
+		2EF8D0CE1ACE314000B44A92 /* ImageDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDetailTableViewCell.h; sourceTree = "<group>"; };
+		2EF8D0CF1ACE314000B44A92 /* ImageDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDetailTableViewCell.m; sourceTree = "<group>"; };
+		2EF8D0D01ACE314000B44A92 /* ImageDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageDetailTableViewCell.xib; sourceTree = "<group>"; };
+		2EF8D0D31ACE31A900B44A92 /* MediaDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaDetailTableViewCell.h; sourceTree = "<group>"; };
+		2EF8D0D41ACE31A900B44A92 /* MediaDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaDetailTableViewCell.m; sourceTree = "<group>"; };
+		2EF8D0D51ACE31A900B44A92 /* MediaDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaDetailTableViewCell.xib; sourceTree = "<group>"; };
+		2EF8D0D81ACE31D300B44A92 /* CommentDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentDetailTableViewCell.h; sourceTree = "<group>"; };
+		2EF8D0D91ACE31D300B44A92 /* CommentDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentDetailTableViewCell.m; sourceTree = "<group>"; };
+		2EF8D0DA1ACE31D300B44A92 /* CommentDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentDetailTableViewCell.xib; sourceTree = "<group>"; };
+		2EF8D0DD1ACE321F00B44A92 /* HeaderDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderDetailTableViewCell.h; sourceTree = "<group>"; };
+		2EF8D0DE1ACE321F00B44A92 /* HeaderDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderDetailTableViewCell.m; sourceTree = "<group>"; };
+		2EF8D0DF1ACE321F00B44A92 /* HeaderDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderDetailTableViewCell.xib; sourceTree = "<group>"; };
+		2EF8D0E21ACE330300B44A92 /* TitleDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleDetailTableViewCell.h; sourceTree = "<group>"; };
+		2EF8D0E31ACE330300B44A92 /* TitleDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleDetailTableViewCell.m; sourceTree = "<group>"; };
+		2EF8D0E41ACE330300B44A92 /* TitleDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleDetailTableViewCell.xib; sourceTree = "<group>"; };
 		2EFECF591ABF71360007BA3B /* Detailed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detailed.storyboard; sourceTree = "<group>"; };
 		2EFECF5C1ABF7B500007BA3B /* DetailCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCollectionViewController.h; sourceTree = "<group>"; };
 		2EFECF5D1ABF7B500007BA3B /* DetailCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCollectionViewController.m; sourceTree = "<group>"; };
@@ -216,6 +246,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2EF8D0C21ACE2FDF00B44A92 /* DetailCells */ = {
+			isa = PBXGroup;
+			children = (
+				2EF8D0DD1ACE321F00B44A92 /* HeaderDetailTableViewCell.h */,
+				2EF8D0DE1ACE321F00B44A92 /* HeaderDetailTableViewCell.m */,
+				2EF8D0DF1ACE321F00B44A92 /* HeaderDetailTableViewCell.xib */,
+				2EF8D0E21ACE330300B44A92 /* TitleDetailTableViewCell.h */,
+				2EF8D0E31ACE330300B44A92 /* TitleDetailTableViewCell.m */,
+				2EF8D0E41ACE330300B44A92 /* TitleDetailTableViewCell.xib */,
+				2EF8D0C91ACE310400B44A92 /* SelfTextDetailTableViewCell.h */,
+				2EF8D0CA1ACE310400B44A92 /* SelfTextDetailTableViewCell.m */,
+				2EF8D0CB1ACE310400B44A92 /* SelfTextDetailTableViewCell.xib */,
+				2EF8D0CE1ACE314000B44A92 /* ImageDetailTableViewCell.h */,
+				2EF8D0CF1ACE314000B44A92 /* ImageDetailTableViewCell.m */,
+				2EF8D0D01ACE314000B44A92 /* ImageDetailTableViewCell.xib */,
+				2EF8D0D31ACE31A900B44A92 /* MediaDetailTableViewCell.h */,
+				2EF8D0D41ACE31A900B44A92 /* MediaDetailTableViewCell.m */,
+				2EF8D0D51ACE31A900B44A92 /* MediaDetailTableViewCell.xib */,
+				2EF8D0D81ACE31D300B44A92 /* CommentDetailTableViewCell.h */,
+				2EF8D0D91ACE31D300B44A92 /* CommentDetailTableViewCell.m */,
+				2EF8D0DA1ACE31D300B44A92 /* CommentDetailTableViewCell.xib */,
+			);
+			name = DetailCells;
+			sourceTree = "<group>";
+		};
 		2EFECF531ABF61890007BA3B /* Details */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +282,7 @@
 				2EFECF601ABF7B6D0007BA3B /* DetailCollectionViewCell.m */,
 				2EFECF621ABF7B970007BA3B /* DetailTableViewCell.h */,
 				2EFECF631ABF7B970007BA3B /* DetailTableViewCell.m */,
+				2EF8D0C21ACE2FDF00B44A92 /* DetailCells */,
 				2EFECF5B1ABF7B1A0007BA3B /* WebView */,
 			);
 			name = Details;
@@ -353,11 +409,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E041F4C1A8FE3D0009C8857 /* PostCollectionViewCell.xib in Resources */,
+				2EF8D0E11ACE321F00B44A92 /* HeaderDetailTableViewCell.xib in Resources */,
+				2EF8D0D21ACE314000B44A92 /* ImageDetailTableViewCell.xib in Resources */,
 				2EC2A33D1A7D2D64003D3837 /* Main.storyboard in Resources */,
 				2E5469741ACB38860098B990 /* iTunesArtwork@2x.png in Resources */,
 				2EC2A3421A7D2D64003D3837 /* LaunchScreen.xib in Resources */,
+				2EF8D0E61ACE330300B44A92 /* TitleDetailTableViewCell.xib in Resources */,
+				2EF8D0D71ACE31A900B44A92 /* MediaDetailTableViewCell.xib in Resources */,
 				2EFECFC11ACB05720007BA3B /* TempDetail.storyboard in Resources */,
+				2EF8D0CD1ACE310400B44A92 /* SelfTextDetailTableViewCell.xib in Resources */,
 				2EC2A33F1A7D2D64003D3837 /* Images.xcassets in Resources */,
+				2EF8D0DC1ACE31D300B44A92 /* CommentDetailTableViewCell.xib in Resources */,
 				2EFECF5A1ABF71360007BA3B /* Detailed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,16 +476,22 @@
 				2EFECF5E1ABF7B500007BA3B /* DetailCollectionViewController.m in Sources */,
 				2EFECFBB1AC4FB540007BA3B /* TempDetailViewController.m in Sources */,
 				2EFECF641ABF7B970007BA3B /* DetailTableViewCell.m in Sources */,
+				2EF8D0DB1ACE31D300B44A92 /* CommentDetailTableViewCell.m in Sources */,
+				2EF8D0D11ACE314000B44A92 /* ImageDetailTableViewCell.m in Sources */,
 				2E041F4F1A8FE4DB009C8857 /* SubRedditTableViewCell.m in Sources */,
 				2EFECF611ABF7B6D0007BA3B /* DetailCollectionViewCell.m in Sources */,
 				2EDE49211A8D921D00D5C25D /* RedditController.m in Sources */,
+				2EF8D0E01ACE321F00B44A92 /* HeaderDetailTableViewCell.m in Sources */,
 				2EC2A3371A7D2D64003D3837 /* TileIt.xcdatamodeld in Sources */,
 				2EC2A3341A7D2D64003D3837 /* AppDelegate.m in Sources */,
 				2EDE49241A8D928800D5C25D /* TableViewController.m in Sources */,
+				2EF8D0E51ACE330300B44A92 /* TitleDetailTableViewCell.m in Sources */,
 				2E041F4B1A8FE3D0009C8857 /* PostCollectionViewCell.m in Sources */,
 				2EC2A3311A7D2D64003D3837 /* main.m in Sources */,
 				2E87BA741ABA4A7500688C42 /* DetailWebViewController.m in Sources */,
 				2EDE492A1A8D92C700D5C25D /* SettingsViewController.m in Sources */,
+				2EF8D0CC1ACE310400B44A92 /* SelfTextDetailTableViewCell.m in Sources */,
+				2EF8D0D61ACE31A900B44A92 /* MediaDetailTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

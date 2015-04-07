@@ -95,20 +95,25 @@
 
 //    TempDetailViewController *tempVC = [TempDetailViewController new];
 //    [self.navigationController presentViewController:tempVC animated:YES completion:nil];
-
-    UIStoryboard *tempDetailSB = [UIStoryboard storyboardWithName:@"TempDetail" bundle:nil];
-    UINavigationController *nav = [tempDetailSB instantiateInitialViewController];
-//    TempDetailViewController * tempDetailView = nav.viewControllers[0];
-//    TempDetailViewController.redditLink = self.
-    [self presentViewController:nav animated:YES completion:nil];
+    LinkDataSource * dataSource = collectionView.dataSource;
+    RKLink * link = dataSource.links[indexPath.row];
     
-    // Actual Detail View, DON'T Delete!
-//    UIStoryboard *detailStoryBoard = [UIStoryboard storyboardWithName:@"Detailed" bundle:nil];
-//    UINavigationController *nav = [detailStoryBoard instantiateInitialViewController];
-//    PostCollectionViewCell * collectionViewCell = nav.viewControllers[0];
-//    
+//    [tempVC updateWithLink:link];
+    
+//    UIStoryboard *tempDetailSB = [UIStoryboard storyboardWithName:@"TempDetail" bundle:nil];
+//    UINavigationController *nav = [tempDetailSB instantiateInitialViewController];
+//    TempDetailViewController * tempDetailView = nav.viewControllers[0];
+//    [tempDetailView updateWithLink:link];
 //    
 //    [self presentViewController:nav animated:YES completion:nil];
+    
+    // Actual Detail View, DON'T Delete!
+    UIStoryboard *detailStoryBoard = [UIStoryboard storyboardWithName:@"Detailed" bundle:nil];
+    UINavigationController *nav = [detailStoryBoard instantiateInitialViewController];
+    DetailCollectionViewController * collectionViewCell = nav.viewControllers[0];
+    [collectionViewCell updateWithLink:link];
+    
+    [self presentViewController:nav animated:YES completion:nil];
 
 }
 

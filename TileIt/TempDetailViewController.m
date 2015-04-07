@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *userName;
 @property (weak, nonatomic) IBOutlet UILabel *commentNumber;
 @property (weak, nonatomic) IBOutlet UILabel *karmaNumber;
+@property (nonatomic, strong) RKLink *link;
 
 @end
 
@@ -33,39 +34,44 @@
     UINavigationItem *navTitle = [[UINavigationItem alloc] initWithTitle:link.subredditFullName];
     self.subredditFullTitle = navTitle;
     
+    self.link = link;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+
     //Setting rounded corners.
 //    self.layer.cornerRadius = 5;
 
     // Heading Information
     
     // Title Content
-    self.postTitle.text = link.title;
+    self.postTitle.text = self.link.title;
     
     // Image Content
     self.imageContent.image = nil;
-//    if (link.URL) {
-    [self.imageContent setImageWithURL:link.URL];
-//    } else if (link.media) {
-//        [self.imageContent setImageWithURL:link.media];
+//    if (self.link.URL) {
+    [self.imageContent setImageWithURL:self.link.URL];
+//    } else if (self.link.media) {
+//        [self.imageContent setImageWithURL:self.link.media];
 //    }
     
     // Submitting User
-    self.userName.text = link.author;
+    self.userName.text = self.link.author;
     
     // Comments
-    self.commentNumber.text = [NSString stringWithFormat:@"%lu",(unsigned long)link.totalComments];
+    self.commentNumber.text = [NSString stringWithFormat:@"%lu",(unsigned long)self.link.totalComments];
     
     // Karma
-    self.karmaNumber.text = [NSString stringWithFormat:@"%lu",(unsigned long)link.upvotes];
+    self.karmaNumber.text = [NSString stringWithFormat:@"%lu",(unsigned long)self.link.upvotes];
     
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(dismiss)];
-    self.navigationItem.leftBarButtonItem = backButton;
+//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(dismiss)];
+//    self.navigationItem.leftBarButtonItem = backButton;
     
-    self.navigationItem.title = link.title;
+    self.navigationItem.title = self.link.title;
     
 }
 
-- (void)dismiss {
+- (IBAction)dismiss:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{
         nil;
     }];

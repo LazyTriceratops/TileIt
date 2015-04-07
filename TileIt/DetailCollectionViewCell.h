@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailCollectionViewController.h"
+#import <RKLink.h>
 
 @interface DetailCollectionViewCell : UICollectionViewCell
+
+- (void)updateWithLink:(RKLink *)link;
 
 @end

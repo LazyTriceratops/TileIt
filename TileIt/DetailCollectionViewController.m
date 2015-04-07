@@ -60,6 +60,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     cell.layer.cornerRadius = 15;
     DetailDataSource * dataSource = [DetailDataSource new];
+//    self.dataSource = dataSource;
     
     // Configure the cell
 //    RKLink *link = self.links[indexPath.row];
@@ -89,6 +90,10 @@ static NSString * const reuseIdentifier = @"Cell";
     [self dismissViewControllerAnimated:YES completion:^{
         nil;
     }];
+    
+}
+
+- (void)updateWithLink:(RKLink *)link {
     
 }
 
