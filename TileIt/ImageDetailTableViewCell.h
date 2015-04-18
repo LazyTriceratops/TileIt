@@ -10,6 +10,7 @@
 #import <RedditKit/RedditKit.h>
 
 @interface ImageDetailTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *mainImage;
 
 -(void)updateWithLink:(RKLink *)link;
 

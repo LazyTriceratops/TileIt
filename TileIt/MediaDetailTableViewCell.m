@@ -7,6 +7,7 @@
 //
 
 #import "MediaDetailTableViewCell.h"
+#import "UIWebView+AFNetworking.h"
 
 @implementation MediaDetailTableViewCell
 
@@ -15,7 +16,8 @@
 }
 
 - (void)updateWithLink:(RKLink *)link {
-    
+    NSURLRequest *request = [NSURLRequest requestWithURL:link.URL];
+    [self.MainWebView loadRequest:request];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

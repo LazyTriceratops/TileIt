@@ -7,6 +7,7 @@
 //
 
 #import "ImageDetailTableViewCell.h"
+#import "UIImageView+AFNetworking.h"
 
 @implementation ImageDetailTableViewCell
 
@@ -15,7 +16,8 @@
 }
 
 - (void)updateWithLink:(RKLink *)link {
-    
+    self.mainImage.image = nil;
+    [self.mainImage setImageWithURL:link.media];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

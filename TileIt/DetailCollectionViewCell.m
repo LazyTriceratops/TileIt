@@ -18,6 +18,8 @@
 
 @interface DetailCollectionViewCell () <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic,strong) NSString *link;
+
 @end
 
 @implementation DetailCollectionViewCell
@@ -35,10 +37,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    DetailTableViewCell *detailCell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    HeaderDetailTableViewCell *headerCell = [tableView dequeueReusableCellWithIdentifier:@"HeaderCell"];
+    TitleDetailTableViewCell *titleCell = [tableView dequeueReusableCellWithIdentifier:@"TitleCell"];
+    SelfTextDetailTableViewCell *selfTextCell = [tableView dequeueReusableCellWithIdentifier:@"SelfTextCell"];
+    ImageDetailTableViewCell *imageCell = [tableView dequeueReusableCellWithIdentifier:@"ImageCell"];
+    MediaDetailTableViewCell *mediaCell = [tableView dequeueReusableCellWithIdentifier:@"MediaCell"];
+    CommentDetailTableViewCell *commentCell = [tableView dequeueReusableCellWithIdentifier:@"CommentCell"];
     
+    RKLink *link = self.link;
     
-    return detailCell;
+    if (link.title) {
+        return titleCell;
+    }
+    if (link.isImageLink) {
+        return imageCell;
+    }
+
+    return headerCell;
 }
 
 - (void)updateWithLink:(RKLink *)link {

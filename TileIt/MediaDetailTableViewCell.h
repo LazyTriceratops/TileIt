@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 #import <RedditKit/RedditKit.h>
 
 @interface MediaDetailTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIWebView *MainWebView;
 
 - (void)updateWithLink:(RKLink *)link;
 
