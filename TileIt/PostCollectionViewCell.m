@@ -38,7 +38,6 @@
     self.content.image = nil;
     [self.content setImageWithURL:link.thumbnailURL];
     
-    
     //Reddit Post Heading Content
     self.submittingUser.text = link.author;
     [self.datePosted setHidden:YES];
@@ -75,12 +74,12 @@
     
 }
 
-- (void)didTransitionFromLayout:(UICollectionViewLayout *)oldLayout toLayout:(UICollectionViewLayout *)newLayout {
-    
-    DetailTableViewCell *detailPostViewController = [DetailTableViewCell new];
-    RKLink *link = link;
-    
-    
-}
+//- (void)didTransitionFromLayout:(UICollectionViewLayout *)oldLayout toLayout:(UICollectionViewLayout *)newLayout {
+//    
+//    DetailTableViewCell *detailPostViewController = [DetailTableViewCell new];
+//    RKLink *link = link;
+//    
+//    
+//}
 
 @end

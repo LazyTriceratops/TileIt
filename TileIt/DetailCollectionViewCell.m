@@ -29,7 +29,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return 6;
 }
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -37,27 +37,28 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    HeaderDetailTableViewCell *headerCell = [tableView dequeueReusableCellWithIdentifier:@"HeaderCell"];
-    TitleDetailTableViewCell *titleCell = [tableView dequeueReusableCellWithIdentifier:@"TitleCell"];
-    SelfTextDetailTableViewCell *selfTextCell = [tableView dequeueReusableCellWithIdentifier:@"SelfTextCell"];
-    ImageDetailTableViewCell *imageCell = [tableView dequeueReusableCellWithIdentifier:@"ImageCell"];
-    MediaDetailTableViewCell *mediaCell = [tableView dequeueReusableCellWithIdentifier:@"MediaCell"];
-    CommentDetailTableViewCell *commentCell = [tableView dequeueReusableCellWithIdentifier:@"CommentCell"];
+    NSString *cellIdentifier;
     
-    RKLink *link = self.link;
+    if (indexPath.row == 0) {
+        cellIdentifier = @"HeaderCell";
+    } else if (indexPath.row == 1){
+        cellIdentifier = @"TitleCell";
+    } else if (indexPath.row == 2) {
+        cellIdentifier = @"SelfTextCell";
+    } else if (indexPath.row == 3) {
+        cellIdentifier = @"ImageCell";
+    } else if (indexPath.row == 4) {
+        cellIdentifier = @"MediaCell";
+    } else if (indexPath.row == 5) {
+        cellIdentifier = @"CommentCell";
+    }
     
-    if (link.title) {
-        return titleCell;
-    }
-    if (link.isImageLink) {
-        return imageCell;
-    }
+    UITableViewCell *detailedCells = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 
-    return headerCell;
+    return detailedCells;
 }
 
 - (void)updateWithLink:(RKLink *)link {
-    
     
 }
 

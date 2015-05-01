@@ -21,16 +21,14 @@
 
 @implementation DetailCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Register cell classes
-//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"DetailCollectionViewCell"];
     
     // Do any additional setup after loading the view.
-    [self.collectionView reloadData];
+//    [self.collectionView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,49 +38,33 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark <UICollectionViewDataSource>
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-
-    return 1;
-}
-
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    return self.arraysOfLinks.count;
+    
+    return 5;
+//    return self.arraysOfLinks.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    RKLink *link = [RKLink new];
-    // set RKlink to self.links 
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"detailTableViewCell" forIndexPath:indexPath];
     
     cell.layer.cornerRadius = 15;
-    DetailDataSource * dataSource = [DetailDataSource new];
-//    self.dataSource = dataSource;
     
-    // Configure the cell
-//    RKLink *link = self.links[indexPath.row];
-//    
-//    [cell updateWithLink:link];
-    NSString * subreddit = [[RedditController sharedInstance].VanillaSubReddits objectAtIndex:indexPath.row];
-    NSArray * currentLinks = self.arraysOfLinks[subreddit];
+//    [DetailCollectionViewCell updateWithLink:link];
+    
+    return cell;
+}
 
-    if(!currentLinks) {
-        [[RKClient sharedClient] linksInSubredditWithName:subreddit pagination:[RKPagination paginationWithLimit:25] completion:^(NSArray *collection, RKPagination *pagination, NSError *error) {
-            
-            self.arraysOfLinks[subreddit] = collection;
-            [self.collectionView reloadItemsAtIndexPaths:@[indexPath]];
-        }];
-    }
+- (void)updateWithLink:(RKLink *)link {
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(dismiss)];
     self.navigationItem.leftBarButtonItem = backButton;
     
-    self.navigationItem.title = link.title;
+    self.navigationItem.title = link.subreddit;
     
-    return cell;
+    
+    
 }
 
 - (void)dismiss {
@@ -90,10 +72,6 @@ static NSString * const reuseIdentifier = @"Cell";
     [self dismissViewControllerAnimated:YES completion:^{
         nil;
     }];
-    
-}
-
-- (void)updateWithLink:(RKLink *)link {
     
 }
 
@@ -111,7 +89,9 @@ static NSString * const reuseIdentifier = @"Cell";
 //}
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
     return CGSizeMake(self.view.frame.size.width - 10, self.view.frame.size.height - 20);
+    
 }
 
 @end
