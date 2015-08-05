@@ -40,8 +40,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    
-    return 5;
+    return 0;
 //    return self.arraysOfLinks.count;
 }
 
@@ -53,6 +52,8 @@
     
 //    [DetailCollectionViewCell updateWithLink:link];
     
+    
+    
     return cell;
 }
 
@@ -62,8 +63,6 @@
     self.navigationItem.leftBarButtonItem = backButton;
     
     self.navigationItem.title = link.subreddit;
-    
-    
     
 }
 
@@ -87,11 +86,5 @@
 //
 //    
 //}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    return CGSizeMake(self.view.frame.size.width - 10, self.view.frame.size.height - 20);
-    
-}
 
 @end

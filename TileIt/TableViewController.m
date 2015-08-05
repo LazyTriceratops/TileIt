@@ -39,6 +39,7 @@
 //    for (NSString * str in [RedditController sharedInstance].VanillaSubReddits) {
 //        [self.arraysOfLinks addObject:@[]];
 //    }
+    self.view.backgroundColor = [UIColor colorWithRed:0.93 green:0.93 blue:0.93 alpha:1];
 }
 
 - (void)registerTableView:(UITableView *)tableView {
